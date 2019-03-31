@@ -1,0 +1,13 @@
+{
+  "name": "list-of-ingredients",
+  "license": "MIT",
+  "engines": {
+    "node": "8.9.4",
+    "yarn": "1.6.0"
+  },
+  "scripts": {
+    "build": "yarn --cwd ingredients-client install && yarn --cwd client build",
+    "deploy": "cp -a ingredients-client/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  }
+}
