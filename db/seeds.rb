@@ -1,4 +1,4 @@
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') #if Rails.env.development?
 
 breakfast_smoothie = Drink.create(
   title: "Two-Minute Breakfast Boost",
